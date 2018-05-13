@@ -1,0 +1,95 @@
+h1{
+  font-size: 36px;
+  color: #d1d1d1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* (x, y)  => position */
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */ 
+}
+
+.App {
+  text-align: center;
+  background-color: #181818;
+  height: 620px;
+  width: 360px;
+  border-radius: 6px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  box-shadow: 20px 20px 30px rgba(24, 24, 24, 0.8)
+}
+.showNum{
+  text-align: right;
+  margin: 0 auto;
+  width: 90%;
+  color: #ff5152;
+  height: 20px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.dispNum {
+  margin: 0 auto;
+  width: 90%;
+  background: 0;
+  border: none;
+  font-size: 36px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 100;
+  text-align: right;
+  color: #575757;
+}
+
+.result {
+  margin: 0 auto;
+  width: 90%;
+  height: 56px;
+  background: 0;
+  border: none;
+  font-size: 56px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 100;
+  text-align: right;
+  color: #d1d1d1;
+  overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.button:focus,
+.dispNum:focus {
+  outline: none;
+}
+.keypad{
+  background-color: #232323;
+}
+.button{
+  height:90px;
+  width:90px;
+  border: 1px solid #2b2b2b;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 100;
+  color: white;
+  background-color: #232323;
+}
+
+.button:active{
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.equal {
+  width: 180px;
+  background-color: #ff5152;
+}
+.equal:active{
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.9);
+}
